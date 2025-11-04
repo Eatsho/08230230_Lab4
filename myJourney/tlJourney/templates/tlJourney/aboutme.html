@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+
+  <style>
+    /* Global Styling */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #d37fbf;
+      color: #222;
+    }
+
+    /* Navigation Bar */
+    header {
+      background: #4487a1;
+      padding: 15px 0;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .nav-links a:hover {
+      color: #f1c40f;
+    }
+
+    /* Card Section */
+    .card {
+      background: rgb(134, 189, 168);
+      width: 80%;
+      margin: 20px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .about-container img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #2c3e50;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+    }
+
+    /* Poem Styling */
+    .poem-figure {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .poem-box {
+      background: #e8d7e8;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px 25px;
+      display: inline-block;
+      text-align: left;
+      max-width: 600px;
+      box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .poem {
+      font-style: italic;
+      font-family: "Courier New", monospace;
+      white-space: pre-wrap;
+      margin: 0;
+    }
+
+    .author {
+      margin-top: 10px;
+      font-style: italic;
+      text-align: right;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 12px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <ul class="nav-links">
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'aboutme' %}">About Me</a></li>
+    </ul>
+  </header>
+
+  <section class="card">
+    <h2>About Me</h2>
+
+    <div class="about-container">
+      <h1>Tsheten Lhamo</h1>
+      <div class="about-text">
+        <p>I thrive on logical thinking and approach my studies with determination and curiosity. 
+        When I'm not immersed in e-books, you’ll find me experimenting with new recipes in the kitchen or exploring the beauty of nature through hiking.</p>
+        <p>Hailing from the serene landscapes of Lhuentse, Bhutan, I am currently pursuing my academic journey at Samtse College of Education, where I am passionate about shaping my future and making a positive impact.</p>
+        <p>Feel free to explore my portfolio to learn more about my projects, skills, and educational background. Let's connect and collaborate on exciting opportunities!</p>
+      </div>
+    </div>
+
+    <div class="hobbies">
+      <h3>Hobbies & Interests</h3>
+      <ul>
+        <li>Cooking</li>
+        <li>Hiking</li>
+        <li>Reading</li>
+        <li>Writing poetry</li>
+        <li>
+          <strong>Finding the Way</strong>
+          <figure class="poem-figure">
+            <div class="poem-box">
+              <pre class="poem">
+For finding a way is not just about the destination,
+It's about the journey, the growth, and transformation.
+Each step I take brings me closer to my dreams,
+And with each challenge faced, I'll emerge stronger it seems.
+
+So let's venture forth, with hope as our guide,
+Embracing the journey, with arms open wide.
+For in the search for our way, we will find who we are meant to be.
+              </pre>
+              <p class="author">— Tsheten Lhamo</p>
+            </div>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 My Learning Journey | Django MVT
+  </footer>
+
+</body>
+</html>

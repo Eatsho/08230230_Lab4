@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journey</title>
+    <style>
+        body { margin: 0; font-family: Arial; background: #78aec7; }
+        header { background: #4d2c50; padding: 15px 0; }
+        .nav-links { display: flex; justify-content: center; gap: 25px; list-style: none; }
+        .nav-links a { color: white; text-decoration: none; font-size: 18px; }
+        .nav-links a:hover { color: #f1c40f; }
+        .intro { text-align: center; padding: 40px 20px; }
+        .profile-pic { width: 150px; height:150px; border-radius: 50%; }
+        .card { width: 80%; background: rgb(122, 114, 136); margin: 20px auto; padding: 20px;
+                border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        footer { text-align: center; background: #2c3e50; color: white; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <ul class="nav-links">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'aboutme' %}">About Me</a></li>
+    </ul>
+</header>
+
+<section class="intro">
+    <img src="https://via.placeholder.com/150" class="profile-pic" alt="Profile">
+    <h1>Hello, I am <span class="highlight">Tsheten Lhamo.</span></h1>
+    <p class="programme">Studying Bachelor in ICT Education</p>
+    <p class="tagline">“In teaching, giving up is never an option; being a lifelong learner is.”</p>
+
+</section>
+
+ <!-- Poem Section -->
+  <section class="card">
+    <div class="poem">
+      <h2>A Teacher’s Path</h2>
+      <p>
+        In the classroom where young minds grow,<br>
+        We plant the seeds, yet still we sow.<br>
+        Giving up? That’s never our song,<br>
+        For teaching hearts must brave and strong.<br><br>
+        We learn, we stumble, rise, and try,<br>
+        Each lesson taught, a new sky.<br>
+        A lifelong learner, we remain,<br>
+        Guiding others through joy and strain.
+      </p>
+    </div>
+  </section>
+
+<footer>
+    © 2025 My Learning Journey | Django MVT
+</footer>
+
+</body>
+</html>
