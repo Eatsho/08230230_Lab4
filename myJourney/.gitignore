@@ -1,0 +1,19 @@
+# Virtual environments
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Django database
+db.sqlite3
+
+# Logs and system files
+*.log
+*.pot
+*.py~
+*.swp
+*.idea/
+.vscode/
+.DS_Store
